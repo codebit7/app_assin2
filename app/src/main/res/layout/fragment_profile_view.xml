@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f0f0f0"
+    android:paddingTop="60dp"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    android:clipToPadding="false">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="User Profile"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"/>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp"
+        app:cardMaxElevation="12dp"
+        android:layout_marginBottom="24dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+
+            <TextView
+                android:id="@+id/empty"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:visibility="gone"
+                android:textSize="15sp"
+                android:textColor="#555555"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="sans-serif-medium"/>
+
+
+            <TextView
+                android:id="@+id/txtUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Username: "
+                android:textSize="16sp"
+                android:textColor="#555555"
+                android:layout_marginTop="12dp"
+                android:fontFamily="sans-serif-medium"/>
+
+
+            <View
+                android:id="@+id/view"
+                android:background="#CCCCCC"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+
+            <TextView
+                android:id="@+id/txtEmail"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email: johndoe@example.com"
+                android:textSize="16sp"
+                android:textColor="#555555"
+                android:fontFamily="sans-serif-medium"/>
+
+
+            <View
+                android:background="#CCCCCC"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+
+            <TextView
+                android:id="@+id/txtNotifications"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Notifications: Enabled"
+                android:textSize="16sp"
+                android:textColor="#555555"
+                android:layout_marginTop="20dp"
+                android:fontFamily="sans-serif-medium"/>
+
+
+            <View
+                android:background="#CCCCCC"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+
+            <TextView
+                android:id="@+id/txtThemeColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Theme Color: Dark"
+                android:textSize="16sp"
+                android:textColor="#555555"
+                android:layout_marginTop="20dp"
+                android:fontFamily="sans-serif-medium"/>
+
+            <!-- Divider -->
+            <View
+                android:background="#CCCCCC"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center"
+        android:backgroundTint="#00796B"
+    android:layout_marginTop="16dp"
+    android:paddingStart="32dp"
+    android:paddingEnd="32dp"
+    android:paddingTop="12dp"
+    android:paddingBottom="12dp"
+    android:layout_marginBottom="40dp"
+    />
+
+</LinearLayout>

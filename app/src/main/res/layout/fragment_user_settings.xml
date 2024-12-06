@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/ll"
+    android:paddingTop="60dp"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    >
+
+
+    <TextView
+        android:text="Enter User Information"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"
+
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/edtUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:hint="Username"
+        android:inputType="text"
+        android:importantForAccessibility="yes"
+        android:contentDescription="Username input field"
+        android:padding="12dp"
+        android:background="@drawable/custom_edt" />
+
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:importantForAccessibility="yes"
+        android:contentDescription="Email input field"
+        android:padding="12dp"
+        android:background="@drawable/custom_edt"
+        android:layout_marginTop="16dp" />
+
+
+    <EditText
+        android:id="@+id/edtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:hint="Password"
+        android:inputType="textPassword"
+
+        android:importantForAccessibility="yes"
+        android:contentDescription="Password input field"
+        android:padding="12dp"
+        android:background="@drawable/custom_edt"
+        android:layout_marginTop="16dp" />
+
+
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+
+          android:layout_marginTop="16dp"
+          android:paddingEnd="10dp"
+          android:orientation="vertical">
+          <TextView
+
+              android:text="Notifications"
+              android:textSize="18sp"
+              android:textStyle="bold"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"/>
+
+          <RadioGroup
+              android:id="@+id/radioGroupNotifications"
+              android:layout_width="wrap_content"
+
+              android:layout_height="wrap_content">
+          <RadioButton
+              android:id="@+id/radioOn"
+              android:buttonTint="@color/colorBlack"
+              android:layout_width="wrap_content"
+
+              android:layout_height="wrap_content"
+              android:text="Enable"
+              android:importantForAccessibility="yes"
+              android:contentDescription="Enable" />
+
+          <RadioButton
+              android:id="@+id/radioOff"
+              android:buttonTint="@color/colorBlack"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Disable"
+              android:importantForAccessibility="yes"
+              android:contentDescription="Disable" />
+          </RadioGroup>
+      </LinearLayout>
+
+
+
+    <TextView
+        android:text="Themes"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Spinner
+        android:id="@+id/spinnerThemeColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="8dp"
+        android:entries="@array/theme_colors" />
+
+
+    <Button
+        android:id="@+id/btnSavePreferences"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save Preferences"
+        android:layout_marginTop="27dp"
+        android:importantForAccessibility="yes"
+        android:contentDescription="Save preferences button"
+        android:padding="12dp"
+        android:backgroundTint="@color/colorGreen"
+        android:textColor="@android:color/white"
+        android:layout_gravity="center" />
+
+</LinearLayout>
